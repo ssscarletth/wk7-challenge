@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="text"></div>
+
+    <script>
+        let index = -50;
+
+        while(index <= 50){
+			console.log(index);
+			index++;
+		}
+
+
+        for(let index = 0; index <= 100; index+=2){
+            console.log(index);
+        }
+
+        
+        let allText = document.querySelector('.text');
+
+        let puzzleGames = [
+			'baba is you',
+			'return of the obra dinn',
+			'stephen’s sausage roll',
+			'the witness',
+			'chants of sennaar'
+		];
+		
+        puzzleGames.forEach(function(item){
+            allText.innerHTML += item + '<br>';
+        });
+
+
+    </script>
+</body>
+</html>
